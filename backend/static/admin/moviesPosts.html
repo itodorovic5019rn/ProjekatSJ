@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/moviesPosts.css">
+    <script src="js/moviesPosts.js"></script>
+    <title>Movies Posts</title>
+</head>
+<body onload="init()">
+
+    <header class="header">
+        <button id="homeBtn">Home</button>
+        <button id="logoutBtn">Logout</button>
+    </header>
+    
+    <div class="formDiv">
+        <h2>Create Movie Post</h2>
+    
+        <form>
+          <input type="text" id="rating" placeholder="rating">
+          <textarea id="comment" placeholder="comment"></textarea>
+          <input type="text" id="likes" placeholder="points">
+          <select id="selectId">
+          </select>
+          <input type="checkbox" id="recommendationBtn">
+
+          <label>Recommend</label>
+          <br>
+          <input id="createBtn" type="submit" value="Create">
+        </form>
+
+        <br><br>
+
+        <h2>Update Movie Post</h2>
+    
+        <form>
+            <input type="text" id="ratingUp" placeholder="rating">
+            <textarea id="commentUp" placeholder="comment"></textarea>
+            <input type="text" id="likesUp" placeholder="points">
+            <input type="checkbox" id="recommendationBtnUp">
+            <label>Recommend</label>
+            <br>
+            <input id="updateBtn" type="submit" value="Update">
+          </form>
+    
+      </div>
+
+      <br>
+
+      <div>
+        <ul id="moviesPostsList">
+
+        </ul>
+      </div>
+
+</body>
+</html>

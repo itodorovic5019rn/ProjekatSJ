@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/users.css">
+    <script src="js/users.js"></script>
+    <title>Users</title>
+</head>
+<body onload="init()">
+
+    <header class="header">
+        <button id="homeBtn">Home</button>
+        <button id="logoutBtn">Logout</button>
+    </header>
+
+    <div class="formDiv">
+        <h2>Create User</h2>
+    
+        <form>
+          <input type="text" id="username" name="login" placeholder="username">
+          <input type="text" id="firstname" name="login" placeholder="first name">
+          <input type="text" id="lastname" name="login" placeholder="last name">
+          <input type="email" id="email" name="login" placeholder="email">
+          <input type="password" id="password" name="login" placeholder="password">
+          <br>
+          <input type="checkbox" id="moderatorBtn" name="moderator" value="moderator">
+          <label>Moderator</label>
+          <br>
+          <input id="registerBtn" type="submit" value="Register">
+        </form>
+
+        <br><br>
+
+        <h2>Update User</h2>
+    
+        <form>
+          <input type="text" id="usernameUp" name="login" placeholder="username">
+          <input type="text" id="firstnameUp" name="login" placeholder="first name">
+          <input type="text" id="lastnameUp" name="login" placeholder="last name">
+          <input type="email" id="emailUp" name="login" placeholder="email">
+          <br>
+          <input type="checkbox" id="moderatorBtnUp" name="moderator" value="moderator"> 
+          <label>Moderator</label> 
+          <br>
+          <input id="updateBtn" type="submit" value="Update">
+        </form>
+    
+      </div>
+
+      <br>
+
+      <div>
+        <ul id="userList">
+
+        </ul>
+      </div>
+    
+</body>
+</html>

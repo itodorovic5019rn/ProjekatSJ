@@ -1,0 +1,66 @@
+body {
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.header {
+    padding: 10px;
+    text-align: right;
+    background: #06d8e7;
+    color: white;
+    position: static;
+}
+
+#logoutBtn{
+    background-color:lightcoral;
+    color:white;
+    border-radius:5px;
+    height: 35px;
+    width: 80px;
+}
+
+#homeBtn{
+    background-color:navy;
+    color:white;
+    border-radius:5px;
+    height: 50px;
+    width: 80px;
+    margin-right: 1630px;
+}
+
+/* =================================== */
+
+.formDiv{
+    margin-right: 600px;
+    margin-left: 48px;
+}
+
+#liId{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.listButtonEdit{
+    background-color:navy;
+    color:white;
+    border-radius:5px;
+    height: 30px;
+    width: 50px;
+    float:right;
+    margin-right: 5px;
+}
+
+.listButtonDelete{
+    background-color:red;
+    color:white;
+    border-radius:5px;
+    height: 30px;
+    width: 50px;
+    float:right;
+    margin-left: 5px;
+}
+

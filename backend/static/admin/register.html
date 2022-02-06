@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/register.js"></script>
+    <title>Document</title>
+</head>
+<body onload="init()">
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+          <h2 class="active">Sign Up </h2>
+      
+          <!-- Login Form -->
+          <form>
+            <input type="text" id="username" class="fadeIn second" name="login" placeholder="username" required>
+            <input type="text" id="firstname" class="fadeIn second" name="login" placeholder="first name" required>
+            <input type="text" id="lastname" class="fadeIn second" name="login" placeholder="last name" required>
+            <input type="email" id="email" class="fadeIn second" name="login" placeholder="email" required>
+            <input type="password" id="password" class="fadeIn third" name="login" placeholder="password" required>
+            <br>
+            <input type="checkbox" id="moderatorBtn" class="fadeIn third" name="moderator" value="moderator">
+            <label class="fadeIn third">Moderator</label>
+            <br>
+            <input id="registerBtn" type="submit" class="fadeIn fourth" value="Register">
+          </form>
+
+          <h5 class="fadeIn fourth">Already have an account?</h5>
+
+          <button id="btnSignUp" class="fadeIn fourth" onclick="signUpFunc()"> Sign In </button>
+
+          <script>
+            function signUpFunc(){
+                window.location.href = "login.html";
+            }
+          </script>
+      
+        </div>
+      </div>
+</body>
+</html>

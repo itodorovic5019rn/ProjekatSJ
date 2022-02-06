@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/movies.css">
+    <script src="js/movies.js"></script>
+    <title>Movies</title>
+</head>
+<body onload="init()">
+
+    <header class="header">
+        <button id="homeBtn">Home</button>
+        <button id="logoutBtn">Logout</button>
+    </header>
+    
+    <div class="formDiv">
+        <h2>Create Movie</h2>
+    
+        <form>
+          <input type="text" id="title" name="login" placeholder="movie title">
+          <input type="text" id="avgRating" name="login" placeholder="rating">
+          <input type="text" id="director" name="login" placeholder="director">
+          <input type="text" id="length" name="login" placeholder="length">
+          <input type="text" id="year" name="login" placeholder="year">
+          <br>
+          <input id="createBtn" type="submit" value="Create">
+        </form>
+
+        <br><br>
+
+        <h2>Update Movie</h2>
+    
+        <form>
+            <input type="text" id="titleUp" name="login" placeholder="movie title">
+            <input type="text" id="avgRatingUp" name="login" placeholder="rating">
+            <input type="text" id="directorUp" name="login" placeholder="director">
+            <input type="text" id="lengthUp" name="login" placeholder="length">
+            <input type="text" id="yearUp" name="login" placeholder="year">
+            <br>
+            <input id="updateBtn" type="submit" value="Update">
+        </form>
+    
+      </div>
+
+      <br>
+
+      <div>
+        <ul id="movieList">
+
+        </ul>
+      </div>
+
+</body>
+</html>
