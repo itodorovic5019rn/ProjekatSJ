@@ -5,7 +5,6 @@
       <b-navbar type="dark" variant="dark">
         <b-navbar-nav>
           <b-nav-item to="/">Home</b-nav-item>
-          <b-nav-item v-if="token" to="/users">Users</b-nav-item>
           <b-nav-item v-if="token" to="/movies">Movies</b-nav-item>
           <b-nav-item v-if="token" to="/tvShows">TvShows</b-nav-item>
           <b-nav-item to="/moviePosts">Movie Posts</b-nav-item>
@@ -38,7 +37,6 @@
     computed: {
       ...mapState([
         'token',
-        'users',
         'role'
       ])
     },

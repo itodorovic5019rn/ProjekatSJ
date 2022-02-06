@@ -79,24 +79,6 @@ export default new Vuex.Store({
   },
 
   actions: {
-    fetchUsers({commit}){
-      return new Promise( (resolve) => {
-        fetch('http://localhost:10000/api/users',{
-          headers: {
-            'Authorization': `Bearer ${localStorage.token}`
-          }
-        })
-          .then( obj => obj.json() )
-          .then( data => {
-            this.state.items = []; // ne zelim da imam duple item-e
-            data.forEach( el => {
-                commit('addItem', el);
-            });
-            resolve(data);
-        });
-      });
-    },
-
     fetchMovies({commit}){
       return new Promise( (resolve) => {
         fetch('http://localhost:10000/api/films',{

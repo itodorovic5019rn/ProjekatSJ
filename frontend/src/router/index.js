@@ -3,7 +3,6 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Register from '../views/Register.vue'
 import Login from '../views/Login.vue'
-import Users from '../views/Users.vue'
 import Movies from '../views/Movies.vue'
 import TvShows from '../views/TvShows.vue'
 import MoviePosts from '../views/MoviePosts.vue'
@@ -29,11 +28,6 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: Login
-  },
-  {
-    path: '/users',
-    name: 'Users',
-    component: Users
   },
   {
     path: '/movies',
